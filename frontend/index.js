@@ -1,1 +1,1 @@
-alert("Welcome to bootcamp")
+// alert("Welcome to bootcamp")
