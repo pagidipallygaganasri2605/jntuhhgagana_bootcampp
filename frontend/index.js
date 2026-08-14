@@ -28,7 +28,7 @@ function toggleUser(){
 
 function randomUser(){
   fetch("https://randomuser.me/api")
-       .then(function(res){
+      .then(function(res){
           return res.json();
        })
        .then(function(data){
@@ -36,7 +36,7 @@ function randomUser(){
         var userGender=document.getElementById("user-gender");
         var userImage=document.getElementById("user-image");
 
-        var newUserName = data.results[o].name.first + ""+ data.results[0].name.last;
+        var newUserName = data.results[0].name.first + ""+ data.results[0].name.last;
         var newUserGender = data.results[0].gender;
         var newUserImage = data.results[0].picture.large;
 
